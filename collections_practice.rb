@@ -52,11 +52,10 @@ end
 
 def add_s(array)
   array.map do |e|
-    e[1] == e ? e : e + "s" 
-    # if e == "feet"
-    #   "feet"
-    # else
-    #   e + "s"
-    # end
+    if e == "feet"
+      "feet"
+    else
+      e + "s"
+    end
   end
 end
